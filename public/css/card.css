@@ -33,7 +33,7 @@
   justify-content: center;
 }
 
-@media (max-width: 604px) {
+@media (max-width: 720px) {
   .post-section {
     padding: 1rem 1rem;
   }
