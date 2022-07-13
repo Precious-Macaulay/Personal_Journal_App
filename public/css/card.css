@@ -34,7 +34,7 @@
 }
 
 @media (max-width: 604px) {
-  .postsection {
+  .post-section {
     padding: 1rem 1rem;
   }
   .journal_card {
