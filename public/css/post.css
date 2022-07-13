@@ -32,5 +32,5 @@ body {
 
 main {
   margin: 3rem 7rem;
-  height: 66vh;
+  min-height: 66vh;
 }
