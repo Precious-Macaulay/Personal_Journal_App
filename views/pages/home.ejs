@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("../partials/head"); %>
+  </head>
+
+  <body>
+    <header><%- include ("../partials/header"); %></header>
+
+    <main>
+      <section class="intro-section">
+        <%- include ("../partials/intro", {user : user}); %>
+      </section>
+      <section class="post-section" id="posts">
+        <% if (posts[0] === undefined ) { %>
+          <a href="/compose"  class="center"><h2>Click To Add Journal</h2></a>
+        <% } else { %>
+          <h2>JOURNALS</h2>
+          <% } %>
+           
+        <% posts.forEach(post => { %>
+        <%- include ("../partials/card", {id: post._id, title: post.title, content : post.content.substring(0,170)}); %>
+        <% }) %>
+      </section>
+      <section class="subscribe-form">
+        <h2>Sign Up To Get <%= user %> Daily Journal</h2>
+        <br />
+        <%- include ("../partials/subscribe"); %>
+      </section>
+    </main>
+    <footer class="footer"><%- include ("../partials/footer"); %></footer>
+  </body>
+</html>

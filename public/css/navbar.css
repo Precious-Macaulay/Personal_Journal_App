@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 7rem;
+  border-bottom: 3px solid rgb(41, 41, 53);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(41, 41, 53);
+}
+
+.navlinks > li {
+  display: inline;
+  margin-left: 4rem;
+}
+
+.navlinks > li > a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(41, 41, 53);
+}
+
+@media (max-width: 604px) {
+  .navbar {
+    padding: 2rem;
+  }
+
+  .navlinks > li {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 998px) {
+  .navbar {
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 412px) {
+  .navlinks > li {
+    display: block;
+    text-align: center;
+  }
+}

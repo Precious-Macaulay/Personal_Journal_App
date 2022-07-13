@@ -1,0 +1,59 @@
+.post-section {
+  padding: 5rem 10rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  background-color: rgb(231, 231, 231);
+}
+
+.post-section > a,
+.post-section > h2 {
+  text-align: center;
+}
+
+.journal_card {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(201, 201, 201);
+}
+
+.journal_card > img {
+  width: 250px;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+.card {
+  padding: 0 3rem;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 604px) {
+  .postsection {
+    padding: 1rem 1rem;
+  }
+  .journal_card {
+    flex-direction: column;
+  }
+ 
+  .journal_card > img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card {
+    padding: 1rem 1rem;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .post-section {
+    padding: 2rem 2rem;
+  }
+}

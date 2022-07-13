@@ -1,0 +1,12 @@
+    <div class="journal_card">
+
+        <img src="images/book.jpg"  alt="journal image" />
+
+      <div class="card">
+        <h2><%= typeof title != "undefined" ? title : "Day" %> </h2>
+        <p>
+          <%= typeof content != "undefined" ? content : "868Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit blanditiis quae praesentium temporibus voluptatum saepe nemo, veritatis quos iure non quasi, illo repellat corrupti illum quia. Harum obcaecati repellendus alias!" %>
+          <a href="posts/<%= id %>" >read more ></a>
+        </p>
+      </div>
+    </div>

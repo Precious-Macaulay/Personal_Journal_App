@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("../partials/head", {css : "css/compose.css"}); %>
+  </head>
+  <body>
+    <header><%- include ("../partials/header"); %></header>
+    <main>
+      <h1>Compose</h1>
+      <form action="/add" method="post" class="form">
+        <label for="title">Title</label><br />
+        <input
+          class="title"
+          type="text"
+          name="title"
+          required
+        />
+        <br />
+        <label for="content">Content</label>
+        <br />
+        <textarea
+          name="content"
+          rows="10"
+          required
+        ></textarea>
+        <br>
+        <br>
+        <button type="submit" class="post-btn">Publish</button>
+      </form>
+    </main>
+    <footer class="footer"><%- include ("../partials/footer"); %></footer>
+  </body>
+</html>

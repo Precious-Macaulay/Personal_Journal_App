@@ -1,0 +1,28 @@
+.subscribe-form {
+  height: 40%;
+  padding: 5rem;
+  display: grid;
+  place-items: center;
+}
+
+.form > label {
+  font-size: large;
+  font-weight: bold;
+}
+
+.name,
+.email {
+  height: 1.5rem;
+  border: 3px solid rgb(234, 226, 226);
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.form > button {
+  width: 100%;
+  background-color: rgb(92, 92, 112);
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+}

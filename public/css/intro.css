@@ -1,0 +1,51 @@
+.intro-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  padding: 5rem;
+  gap: 10px;
+}
+
+.intro-section > figure > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.welcome {
+  width: 40vw;
+  text-align: center;
+}
+
+.welcome > h1 {
+  font-size: 4rem;
+  font-family: 'Satisfy', cursive;
+}
+
+@media (max-width: 560px) {
+  .intro-section {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 10px;
+  }
+
+  .welcome > h1 {
+    font-size: 2rem;
+  }
+
+  .welcome {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro-section {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 10px;
+  }
+
+  .welcome > h1 {
+    font-size: 2.5rem;
+  }
+}
