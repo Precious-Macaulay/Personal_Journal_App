@@ -9,7 +9,7 @@ body {
 
 main {
   margin: 3rem 7rem;
-  height: 66vh;
+  min-height: 66vh;
 }
 
 label {
@@ -42,7 +42,7 @@ textarea {
 @media (max-width: 560px) {
   main {
       margin: 1.5rem 2.5rem;
-      height: 73vh;
+      min-height: 73vh;
   }
 }
 
